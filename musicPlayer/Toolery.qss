@@ -1,0 +1,125 @@
+QListView {
+    /* Set the background color and border */
+    background-image: url(":/ic/media_player_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC;
+}
+
+QListView::item {
+    /* Set the background color, padding, and margin */
+    background-color: #FCE7CC;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid transparent;
+}
+
+QListView::item:selected {
+    /* Set the background color of selected items */
+    background-color: #F86400;
+    border:none;
+    outline: none;
+}
+
+QListView::item:selected:focus {
+    /* Remove the dotted border around the text */
+    outline: none;
+    border:none;
+}
+
+QListView::item:hover {
+    /* Set the background color of hovered items */
+    background-color: #FFC77D;
+    color: #FCE7CC;
+}
+
+/* Set the background color, font, and text color for QMenuBar */
+QMenuBar {
+    /* Set the background color as a linear gradient */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FCE7CC, stop:1 #FCE7CC);
+    font: 12pt "Arial";
+    color: #000000;
+}
+
+/* Set the background color, font, and text color for QMenu */
+QMenu {
+    /* Set the background color as a linear gradient */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FCE7CC, stop:1 #FCE7CC);
+    font: 12pt "Arial";
+    color: #000000;
+}
+
+/* Set the background color and font for QAction */
+QAction {
+    /* Set the background color as a linear gradient */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #EDEDED, stop:1 #F2B6CB);
+    font: 12pt "Arial";
+    color: #FFFFFF;
+}
+
+/* Set the background color, font, and text color for QStatusBar */
+QStatusBar {
+    /* Set the background color as a linear gradient */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FCE7CC, stop:1 #FCE7CC);
+    font: 12pt "Arial" #000000;
+    color: #000000;
+}
+
+QScrollBar:vertical {
+    /* Set the width and color of the vertical scroll bar */
+    width: 20px;
+    background-color: #FCE7CC;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    /* Set the color and border radius of the vertical scroll bar handle */
+    background-color: #F86400;
+    border-radius: 10px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    /* Hide the vertical scroll bar arrows */
+    height: 0;
+    width: 0;
+    border: none;
+}
+
+QScrollBar:horizontal {
+    /* Set the height and color of the horizontal scroll bar */
+    height: 20px;
+    background-color: #FCE7CC;
+    border: none;
+}
+
+QScrollBar::handle:horizontal {
+    /* Set the color and border radius of the horizontal scroll bar handle */
+    background-color: #F86400;
+    border-radius: 10px;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    /* Hide the horizontal scroll bar arrows */
+    height: 0;
+    width: 0;
+    border: none;
+}
+QToolBar {
+    /* Set the background color as a linear gradient */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F86400, stop:1 #FFFFFF);
+    /* Set the font and text color of the toolbar */
+    font: 12pt "Arial";
+    color: #FFFFFF;
+    /* Set the default height of the toolbar */
+    height: 30px;
+}
+
+
+QToolBar:hover {
+    /* Set the height of the toolbar to 50px when hovered */
+    height: 50px;
+}
+/* QVideoWidget , QLabel#sound_percentage */
+
+

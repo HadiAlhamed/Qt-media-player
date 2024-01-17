@@ -1,0 +1,42 @@
+#ifndef MY_VIDEO_WIDGET_H
+#define MY_VIDEO_WIDGET_H
+class VideoWidget : public QVideoWidget
+{
+    Q_OBJECT
+
+public:
+    VideoWidget(QWidget *parent = nullptr)
+        : QVideoWidget(parent)
+    {
+        setAcceptDrops(true);
+    }
+
+protected:
+    void dragEnterEvent(QDragEnterEvent *event) override
+    {
+        if (event->mimeData()->hasUrls() && event->mimeData()->urls().count() == 1) {
+            QUrl url = event->mimeData()->urls().at(0);
+            if (url.isLocalFile()) {
+                QString fileName = url.toLocalFile();
+                if (fileName.endsWith(".mp3") || fileName.endsWith(".mp4")) {
+                    event->acceptProposedAction();
+                }
+            }
+        }
+    }
+
+    void dropEvent(QDropEvent *event) override
+    {
+        if (event->mimeData()->hasUrls() && event->mimeData()->urls().count() == 1) {
+            QUrl url = event->mimeData()->urls().at(0);
+            if (url.isLocalFile()) {
+                QString fileName = url.toLocalFile();
+                if (fileName.endsWith(".mp3") || fileName.endsWith(".mp4")) {
+                    qDebug() << "File dropped: " << fileName;
+                    // Play the video or audio file here
+                }
+            }
+        }
+    }
+};
+#endif // MY_VIDEO_WIDGET_H

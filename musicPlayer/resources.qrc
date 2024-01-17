@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/src">
+        <file>icons/Album.jpg</file>
+        <file>icons/Create Playlist.jpg</file>
+        <file>icons/Download.jpg</file>
+        <file>icons/Favorite.jpg</file>
+        <file>icons/Library.jpg</file>
+        <file>icons/Notification.jpg</file>
+        <file>icons/Queue.jpg</file>
+        <file>icons/Radio.jpg</file>
+        <file>icons/Search.jpg</file>
+        <file>images/song_image.jpg</file>
+        <file>icons/open file.png</file>
+        <file>icons/open folder.png</file>
+        <file>icons/fullscreen.png</file>
+        <file>icons/fullscreen-exit.png</file>
+        <file>icons/pause-circle.png</file>
+        <file>icons/play-circle.png</file>
+        <file>icons/repeat.png</file>
+        <file>icons/repeat-once.png</file>
+        <file>icons/shuffle.png</file>
+        <file>icons/shuffle-variant.png</file>
+        <file>icons/skip-backward.png</file>
+        <file>icons/skip-forward.png</file>
+        <file>icons/skip-next.png</file>
+        <file>icons/skip-previous.png</file>
+        <file>icons/stop-circle.png</file>
+        <file>icons/volume-high.png</file>
+        <file>icons/volume-minus.png</file>
+        <file>icons/volume-off.png</file>
+        <file>icons/volume-plus.png</file>
+        <file>icons/4984950.png</file>
+    </qresource>
+    <qresource prefix="/ic">
+        <file>media_player_icon.png</file>
+        <file>icon100.ico</file>
+        <file>icons200.ico</file>
+        <file>icons8-media-player-64.ico</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Toolery.qss</file>
+    </qresource>
+</RCC>
